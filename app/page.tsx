@@ -1,4 +1,5 @@
 import { CarCard, CustomFilter, HeroSection, SearchBar } from "@/components";
+import { fuels, yearsOfProduction } from "@/constants";
 import { FilterProps } from "@/types";
 import { fetchCars } from "@/utils";
 
@@ -25,8 +26,8 @@ export default async function Home({ searchParams }: any) {
           <SearchBar />
 
           <div className="home__filter-container">
-            <CustomFilter />
-            <CustomFilter />
+            <CustomFilter title="fuel" options={fuels} />
+            <CustomFilter title="year" options={yearsOfProduction} />
           </div>
         </div>
 
@@ -34,7 +35,7 @@ export default async function Home({ searchParams }: any) {
           <section>
             <div className="home__cars-wrapper">
               {allCars?.map((car, index) => (
-                <CarCard car={car} key={index}/>
+                <CarCard car={car} key={index} />
               ))}
             </div>
           </section>
