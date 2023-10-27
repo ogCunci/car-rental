@@ -8,6 +8,7 @@ import SearchManufacturer from "./SearchManufacturer";
 import CarCard from "./CarCard";
 import CarDetails from "./CarDetails";
 import ShowMore from "./ShowMore";
+import SelfAdvertiseSection from "./SelfAdvertiseSection";
 
 export {
   SearchManufacturer,
@@ -20,4 +21,5 @@ export {
   CarCard,
   CarDetails,
   ShowMore,
+  SelfAdvertiseSection,
 };

@@ -3,10 +3,10 @@ import {
   CustomFilter,
   HeroSection,
   SearchBar,
+  SelfAdvertiseSection,
   ShowMore,
 } from "@/components";
 import { fuels, yearsOfProduction } from "@/constants";
-import { FilterProps } from "@/types";
 import { fetchCars } from "@/utils";
 
 export default async function Home({ searchParams }: any) {
@@ -22,7 +22,8 @@ export default async function Home({ searchParams }: any) {
   return (
     <main className="overflow-hidden">
       <HeroSection />
-      <div className="mt-12 padding-x padding-y width-max">
+      <SelfAdvertiseSection />
+      <div className="mt-12 padding-x width-max">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Car Catalog</h1>
           <p>Explore the cars you might like</p>
