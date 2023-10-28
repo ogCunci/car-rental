@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { Fragment } from "react";
 
-const SelfAdvertiseSection = () => {
+const SelfAdvertiseSection = () => {  
   return (
     <div className="flex flex-col gap-5 relative z-0 max-w-[1440px] mx-auto pt-24">
       <h1 className="sm:text-5xl text-4xl font-extrabold">Why Choose Us?</h1>
